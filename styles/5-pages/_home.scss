@@ -1,0 +1,101 @@
+.homepage {
+	min-height: 100vh;
+	max-width: 130rem;
+	margin: 0 auto;
+	background: $mono-700;
+
+	&__wrapper {
+		height: 100%;
+		max-width: 100rem;
+		margin: 0 auto;
+		padding-top: 3rem;
+	}
+
+	&__categories {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		// flex-wrap: wrap;
+		// margin-top: 2rem;
+
+		@include mobile-max {
+			flex-wrap: wrap;
+			padding: 0 1rem;
+		}
+	}
+
+	&__banner {
+		@include flex-center-column;
+		margin-bottom: 2rem;
+		height: 30rem;
+		width: 100%;
+		// background: $mono-300;
+	}
+	&__title {
+		font-size: 3rem;
+		font-family: $serif-font;
+		letter-spacing: 0.3rem;
+		color: $mono-200;
+		text-transform: uppercase;
+		animation: tracking-in-contract 1.6s 1s cubic-bezier(0.215, 0.61, 0.355, 1)
+			both;
+
+		span {
+			color: $crimson;
+			margin-right: 0.3rem;
+		}
+		p {
+			text-align: right;
+			letter-spacing: 0.3rem;
+			font-family: $display-font;
+			font-weight: 200;
+		}
+	}
+
+	.about,
+	.portfolio {
+		height: 40rem;
+		font-size: 4rem;
+		width: 100%;
+		cursor: pointer;
+		font-family: $serif-font;
+
+		a {
+			@include flex-center-row;
+			height: 100%;
+			width: 100%;
+		}
+	}
+	.about {
+		background: $mono-400;
+		animation: bounce-in-left 1.1s 1.5s alternate both;
+		&:hover {
+			// transform: scale(1.02);
+			background: rgba($mono-300, 0.96);
+		}
+		a {
+			color: $mono-700;
+		}
+
+		@include mobile-max {
+			margin-bottom: 1rem;
+		}
+	}
+
+	.portfolio {
+		background: $mono-600;
+		color: $mono-200;
+		animation: bounce-in-right 1.1s 1.5s both;
+		&:hover {
+			transform: scale(1.02);
+			background: rgba($mono-500, 0.96);
+		}
+
+		a {
+			color: $mono-300;
+		}
+		@include mobile-max {
+			grid-columns: span 1;
+		}
+	}
+}
