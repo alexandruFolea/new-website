@@ -5,7 +5,7 @@
 	top: 0;
 	left: 0;
 	right: 0;
-	z-index: 100;
+	z-index: 200;
 	@include mobile-max {
 		height: 10rem;
 	}
@@ -15,9 +15,10 @@
 		width: 100%;
 		max-width: 130rem;
 		margin: 0 auto;
+		padding: 0 0 0 5rem;
 		list-style: none;
 		display: flex;
-		justify-content: center;
+		justify-content: flex-start;
 		align-items: center;
 
 		@include mobile-max {
@@ -27,7 +28,7 @@
 	}
 
 	&__link {
-		margin-right: 2rem;
+		margin-right: 4rem;
 		font-size: 1.8rem;
 		a {
 			color: $mono-200;
