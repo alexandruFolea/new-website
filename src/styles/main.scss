@@ -1,0 +1,25 @@
+//0 resets
+@import '0-resets/reset';
+
+//1 helpers
+@import '1-helpers/breakpoints';
+@import '1-helpers/variables';
+@import '1-helpers/keyframes';
+@import '1-helpers/mixins';
+@import '1-helpers/typography';
+
+//2
+@import '2-individuals/contact-link';
+
+//3 layout
+@import '3-layout/layout';
+@import '3-layout/footer';
+@import '3-layout/header';
+
+//4 pages
+
+@import '5-pages/home';
+@import '5-pages/portfolio';
+@import '5-pages/about';
+@import '5-pages/contact';
+// @import '5-pages/sassy';

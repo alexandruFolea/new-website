@@ -1,0 +1,84 @@
+.contact {
+	max-width: 130rem;
+	margin: 0 auto;
+	min-height: 100vh;
+	padding: 8rem 0;
+	@include flex-center-column;
+	position: relative;
+	z-index: 5;
+
+	.form-container {
+		max-width: 55rem;
+		margin-bottom: 20rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		margin-top: 20px;
+		width: 100%;
+
+		h1 {
+			margin-bottom: 2rem;
+			padding-bottom: 0.3rem;
+			@include title;
+			color: $mono-200;
+
+			@include mobile-max {
+				@include title-mobile;
+			}
+		}
+
+		form {
+			width: 100%;
+			@include flex-center-column;
+			font-family: $inter-font;
+
+			input {
+				width: 80%;
+				height: 3rem;
+				padding: 1rem;
+				margin-bottom: 1rem;
+				font-family: $inter-font;
+
+				&:focus {
+					outline-color: $blue-550;
+				}
+			}
+
+			textarea {
+				width: 80%;
+				height: 20rem;
+				padding: 1rem;
+				margin-bottom: 1rem;
+				font-family: $inter-font;
+				resize: none;
+
+				&:focus {
+					outline-color: $blue-550;
+				}
+			}
+
+			button {
+				margin-top: 2rem;
+				font-family: $inter-font;
+				font-weight: 400;
+				font-size: 1.8rem;
+				padding: 1.2rem 5rem;
+				background: $mono-200;
+				color: $blue-550;
+				cursor: pointer;
+
+				&:hover {
+					box-shadow: 0 0.3rem 0.6rem rgba($blue-550, 0.4);
+				}
+			}
+
+			span {
+				padding-top: 20px;
+				color: green;
+				text-align: center;
+				font-family: $inter-font;
+			}
+		}
+	}
+}
