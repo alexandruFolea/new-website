@@ -25,7 +25,8 @@ $blue-800: hsl(190, 77%, 88%);
 
 //monocromatic
 $mono-100: hsl(0, 0%, 8%);
-$mono-200: hsl(210, 10%, 23%);
+$mono-200: hsl(210, 23%, 19%);
+// $mono-200: hsl(210, 10%, 23%);
 $mono-300: hsl(210, 9%, 31%);
 $mono-400: hsl(208, 7%, 46%);
 $mono-500: hsl(210, 11%, 71%);
@@ -40,7 +41,7 @@ $base-margin: 0.75rem !default;
 
 // borders
 $base-border-thickness: 1px !default;
-$base-border-radius: 20px !default;
+$br: 0.5rem !default;
 
 // box-shadow
 $base-box-shadow: 1px 3px 5px hsla(0, 0%, 0%, 0.2) !default;

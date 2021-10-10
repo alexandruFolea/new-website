@@ -29,6 +29,6 @@ export const projects = [
 		url: 'https://tip-calculator-front-end-mentor.netlify.app/',
 		img: '/projects/splitter.png',
 		desc: 'Front-end Mentor Challange',
-		stacks: ['React', 'Sass'],
+		stacks: ['Javascript', 'HTML', 'CSS'],
 	},
 ];

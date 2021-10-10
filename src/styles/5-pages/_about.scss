@@ -4,25 +4,12 @@
 	margin: 0 auto;
 	display: grid;
 	grid-gap: 0.5rem;
-	// background: $blue-550;
 	grid-template-columns: 1fr 1fr;
 	position: relative;
 
 	@include mobile-max {
 		grid-template-columns: 1fr;
 	}
-
-	// &::before {
-	// 	display: block;
-	// 	content: '02';
-	// 	position: absolute;
-	// 	bottom: 2%;
-	// 	left: 5rem;
-	// 	font-family: $mont-font;
-	// 	font-size: 15rem;
-	// 	color: rgba($mono-300, 0.2);
-	// 	border-bottom: 0.7rem solid rgba($mono-300, 0.2);
-	// }
 
 	.container__left {
 		padding: 10rem 0 0 5rem;
@@ -37,6 +24,10 @@
 			display: inline-block;
 			@include title;
 			border-bottom: 0.3rem solid $blue-550;
+			&::selection {
+				background: $blue-550;
+				color: $mono-200;
+			}
 
 			@include mobile-max {
 				@include title-mobile;
@@ -52,6 +43,11 @@
 				padding-right: 10rem;
 				margin-bottom: 0.6rem;
 				color: $mono-300;
+				&::selection {
+					background: $blue-550;
+					color: $mono-200;
+				}
+
 				@include mobile-max {
 					font-size: 1.4rem;
 					margin-bottom: 1rem;
@@ -114,6 +110,7 @@
 				font-family: $inter-font;
 				font-size: 1.6rem;
 				padding: 1.5rem 2rem;
+				border-radius: $br;
 				&:hover {
 					box-shadow: 0 0.3rem 0.6rem rgba($blue-550, 0.4);
 				}

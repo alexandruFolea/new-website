@@ -8,6 +8,10 @@
 		color: $mono-800;
 		text-align: center;
 		margin-bottom: 3rem;
+		&::selection {
+			background: $blue-550;
+			color: $mono-200;
+		}
 		@include mobile-max {
 			font-size: 1.8rem;
 		}
@@ -19,6 +23,11 @@
 		background: $mono-300;
 		font-size: 1.6rem;
 		padding: 1.5rem 5rem;
+		border-radius: $br;
+		&::selection {
+			background: $blue-550;
+			color: $mono-200;
+		}
 
 		&:hover {
 			box-shadow: 0 0.3rem 0.6rem rgba($blue-550, 0.4);

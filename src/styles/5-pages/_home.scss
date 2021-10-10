@@ -35,6 +35,10 @@
 			font-size: 7rem;
 			font-weight: 800;
 			letter-spacing: 1rem;
+			&::selection {
+				background: $blue-550;
+				color: $mono-200;
+			}
 
 			@include mobile-max {
 				font-size: 5rem;
@@ -45,11 +49,12 @@
 			font-weight: 600;
 			letter-spacing: 3rem;
 			margin-bottom: 1rem;
-			// display: flex;
-			// align-items: center;
-			// justify-content: center;
 			position: relative;
 			z-index: 30;
+			&::selection {
+				background: $blue-550;
+				color: $mono-200;
+			}
 			@include mobile-max {
 				font-size: 2.6rem;
 				letter-spacing: 2rem;
@@ -82,6 +87,10 @@
 			letter-spacing: 0.36rem;
 			position: relative;
 			z-index: 50;
+			&::selection {
+				background: $mono-200;
+				color: $blue-550;
+			}
 			@include mobile-max {
 				font-size: 2.3rem;
 			}
@@ -97,6 +106,10 @@
 		justify-content: space-evenly;
 		border-bottom: 0.1rem solid rgba($blue-550, 0.6);
 
+		@include mobile-max {
+			flex-direction: column;
+		}
+
 		.about,
 		.portfolio {
 			a {
@@ -107,6 +120,10 @@
 				padding: 1rem 2rem;
 				text-transform: uppercase;
 				border-bottom: 0.5rem solid rgba($blue-550, 0.282);
+				&::selection {
+					background: $blue-550;
+					color: $mono-200;
+				}
 				@include mobile-max {
 					font-size: 2.8rem;
 				}

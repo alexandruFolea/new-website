@@ -22,6 +22,10 @@
 			padding-bottom: 0.3rem;
 			@include title;
 			color: $mono-200;
+			&::selection {
+				background: $blue-550;
+				color: $mono-200;
+			}
 
 			@include mobile-max {
 				@include title-mobile;
@@ -67,6 +71,7 @@
 				background: $mono-200;
 				color: $blue-550;
 				cursor: pointer;
+				border-radius: 0.5rem;
 
 				&:hover {
 					box-shadow: 0 0.3rem 0.6rem rgba($blue-550, 0.4);

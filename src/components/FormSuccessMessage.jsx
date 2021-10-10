@@ -3,7 +3,7 @@ import React from 'react';
 const FormSuccessMessage = () => {
 	return (
 		<>
-			<span> Thank you, I'll get back to you shortly !</span>
+			<span> Thank you, I will get back to you shortly !</span>
 		</>
 	);
 };
