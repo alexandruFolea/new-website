@@ -40,7 +40,7 @@ export const icons = [
 		attr: 'Sassy CSS',
 	},
 	{
-		id: 8,
+		id: 9,
 		url: '/icons/git.png',
 		attr: 'Git && Github',
 	},
