@@ -26,7 +26,7 @@ export const icons = [
 	},
 	{
 		id: 6,
-		url: '/icons/emailjs.png',
+		url: '/icons/emailJs.png',
 		attr: 'Email Js',
 	},
 	{
