@@ -1,19 +1,34 @@
-import ProjectList from '../components/ProjectList';
-import ContactLink from '../components/ContactLink';
-import Skills from '../components/Skills';
-import Meta from '../components/Meta';
+import React from 'react';
+import { projects } from '../constants/data';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const portfolio = () => {
-	const favicon =
-		'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">☯️</text></svg>';
 	return (
-		<div className='portfoliopage' id='portfolio'>
-			<Meta title='Portfolio Page' favicon={favicon} />
-			<h1>Portfolio</h1>
-			<ProjectList />
-			<Skills />
-			<div className='contact__link__dark'>
-				<ContactLink />
+		<div className='portfolio' id='portfolio'>
+			<div className='page__title'>
+				<h1>My portfolio</h1>
+			</div>
+			<div className='portfolio__container'>
+				<div className='portfolio__wrapper'>
+					{projects.map(({ id, title, url, img, desc }) => {
+						return (
+							<div className='portfolio__card' key={id}>
+								<a href={url} target='_blank' rel='noreferrer'>
+									<div>
+										<h3>{title}</h3>
+										<Image
+											src={img}
+											height='400'
+											width='400'
+											alt={`project image ${title}`}
+										/>
+									</div>
+								</a>
+							</div>
+						);
+					})}
+				</div>
 			</div>
 		</div>
 	);

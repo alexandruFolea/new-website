@@ -30,18 +30,18 @@ export default function Contact() {
 
 	return (
 		<div className='contact' id='contact'>
-			<div className='form-container'>
-				<form onSubmit={handleSumbit}>
-					{/* method that handles the form */}
-					<h1>Contact Me</h1>
-					<input type='text' placeholder='Subject' name='name' required />
-					<input type='email' placeholder='Email' name='email' required />
-					<textarea placeholder='Message' name='message' required></textarea>
+			<form onSubmit={handleSumbit}>
+				{/* method that handles the form */}
+				<h4>Get in touch</h4>
+				<input type='text' placeholder='Subject' name='name' required />
+				<input type='email' placeholder='Your E-mail' name='email' required />
+				<textarea placeholder='Your Message' name='message' required></textarea>
+				<div className='contact__btn'>
 					<button type='submit'>send</button>
-					{/* if the message exists then go ahead and display it, otherwise do nothing */}
-					{message && <FormSuccessMessage />}
-				</form>
-			</div>
+				</div>
+				{/* if the message exists then go ahead and display it, otherwise do nothing */}
+				{message && <FormSuccessMessage />}
+			</form>
 		</div>
 	);
 }

@@ -9,8 +9,7 @@
 @import '1-helpers/typography';
 
 //2
-@import '2-individuals/contact-link';
-@import '2-individuals/skill-icons';
+@import '2-individuals/bg-animation';
 
 //3 layout
 @import '3-layout/layout';
@@ -19,8 +18,8 @@
 
 //4 pages
 
+// 5
 @import '5-pages/home';
-@import '5-pages/portfolio';
+@import '5-pages/intro';
 @import '5-pages/about';
-@import '5-pages/contact';
-// @import '5-pages/sassy';
+@import '5-pages/portfolio';

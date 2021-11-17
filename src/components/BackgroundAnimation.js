@@ -1,12 +1,12 @@
 const BackgroundAnimation = () => (
-	<div>
+	<div className='bg__animation'>
 		<svg
 			className='BgAnimation__svg'
-			viewBox='0 0 602 602'
-			fill='none'
+			viewBox='0 0 1000 1000'
+			fill='cyan'
 			xmlns='http://www.w3.org/2000/svg'
 		>
-			<g opacity='0.15'>
+			<g opacity='0.8'>
 				<path
 					fillRule='evenodd'
 					clipRule='evenodd'
@@ -29,8 +29,8 @@ const BackgroundAnimation = () => (
 				cx='295.027'
 				cy='193.118'
 				transform='translate(-295.027 -193.118)'
-				rx='1.07306'
-				ry='1.07433'
+				rx='8'
+				ry='4'
 				fill='#945DD6'
 			>
 				<animateMotion dur='10s' repeatCount='indefinite' rotate='auto'>
@@ -50,9 +50,9 @@ const BackgroundAnimation = () => (
 				cx='295.027'
 				cy='193.118'
 				transform='translate(-295.027 -193.118)'
-				rx='1.07306'
-				ry='1.07433'
-				fill='#46737'
+				rx='8'
+				ry='4'
+				fill='blue'
 			>
 				<animateMotion
 					dur='5s'
@@ -80,10 +80,10 @@ const BackgroundAnimation = () => (
 			<ellipse
 				cx='476.525'
 				cy='363.313'
-				rx='1.07433'
-				ry='1.07306'
+				rx='4'
+				ry='8'
 				transform='translate(-476.525 -363.313) rotate(90 476.525 363.313)'
-				fill='#945DD6'
+				fill='black'
 			>
 				<animateMotion dur='10s' repeatCount='indefinite' rotate='auto'>
 					<mpath xlinkHref='#path_0' />
@@ -101,10 +101,10 @@ const BackgroundAnimation = () => (
 			<ellipse
 				cx='382.164'
 				cy='155.029'
-				rx='1.07433'
-				ry='1.07306'
+				rx='4'
+				ry='8'
 				transform='translate(-382.164 -155.029) rotate(90 382.164 155.029)'
-				fill='#F46737'
+				fill='green'
 			>
 				<animateMotion
 					dur='10s'
@@ -132,10 +132,10 @@ const BackgroundAnimation = () => (
 			<ellipse
 				cx='333.324'
 				cy='382.691'
-				rx='1.07306'
-				ry='1.07433'
+				rx='8'
+				ry='4'
 				transform='translate(-333.324 -382.691) rotate(-180 333.324 382.691)'
-				fill='#F46737'
+				fill='magenta'
 			>
 				<animateMotion
 					dur='5s'
@@ -163,10 +163,10 @@ const BackgroundAnimation = () => (
 			<ellipse
 				cx='165.524'
 				cy='93.9596'
-				rx='1.07306'
-				ry='1.07433'
+				rx='8'
+				ry='4'
 				transform='translate(-165.524 -93.9596)'
-				fill='#F46737'
+				fill='crimson'
 			>
 				<animateMotion
 					dur='10s'
@@ -194,10 +194,10 @@ const BackgroundAnimation = () => (
 			<ellipse
 				cx='476.525'
 				cy='363.313'
-				rx='1.07433'
-				ry='1.07306'
+				rx='4'
+				ry='8'
 				transform='translate(-476.525 -363.313) rotate(90 476.525 363.313)'
-				fill='#13ADC7'
+				fill='yellow'
 			>
 				<animateMotion
 					dur='12s'

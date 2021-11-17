@@ -1,0 +1,153 @@
+.footer {
+	width: 100%;
+	background: $mono-200;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr 5rem;
+	align-items: flex-start;
+	justify-items: center;
+	font-family: $main-font;
+	color: $mono-800;
+	padding: 4rem 0;
+	box-shadow: 0 -1rem 0.6rem rgba($mono-400, 0.5);
+	position: relative;
+	z-index: 100;
+
+	@include md-max {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.footer__left {
+		@include md-max {
+			margin-bottom: 3rem;
+		}
+		h1 {
+			color: $mono-800;
+			padding-bottom: 0.5rem;
+			font-size: 3rem;
+			border-bottom: 0.2rem solid $blue-550;
+			font-family: $display-font;
+		}
+	}
+	.footer__center {
+		@include md-max {
+			margin-bottom: 3rem;
+		}
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		// padding-top: 2rem;
+
+		.footer__center__top {
+			display: flex;
+
+			h4 {
+				font-size: 1.8rem;
+				font-family: $display-font;
+			}
+
+			svg {
+				height: 4rem;
+				width: 4rem;
+				margin-right: 1rem;
+			}
+		}
+
+		.footer__center__list {
+			padding-left: 3rem;
+			border-left: 0.3rem solid $blue-550;
+
+			li {
+				margin-bottom: 1rem;
+			}
+			a {
+				color: $mono-800;
+				font-size: 1.4rem;
+				font-weight: 200;
+			}
+		}
+	}
+
+	.footer__right {
+		@include md-max {
+			margin-bottom: 3rem;
+		}
+		height: 100%;
+		width: 100%;
+		// background: cyan;
+		.contact {
+			width: 90%;
+			@include md-max {
+				width: 80%;
+				margin: 0 auto;
+			}
+			form {
+				display: flex;
+				flex-direction: column;
+				h4 {
+					margin-bottom: 1.4rem;
+					font-size: 1.8rem;
+					font-family: $display-font;
+
+					@include md-max {
+						text-align: center;
+						font-size: 3rem;
+					}
+				}
+
+				input {
+					padding: 0.6rem;
+					font-family: $main-font;
+					margin-bottom: 0.4rem;
+				}
+
+				textarea {
+					height: 10rem;
+					resize: none;
+					padding: 0.6rem;
+					margin-bottom: 1.4rem;
+					font-family: $main-font;
+				}
+
+				button {
+					display: inline-block;
+					color: $mono-200;
+					font-size: 1.4rem;
+					padding: 1rem 4rem;
+					background: $mono-800;
+					cursor: pointer;
+					transition: all 0.2s ease-in;
+					margin-bottom: 2rem;
+
+					&:hover {
+						background: $mono-700;
+						transform: translateY(-0.4rem);
+						box-shadow: 0 0.1rem 0.4rem $blue-550;
+					}
+				}
+				.prompt__message {
+					font-size: 1.8rem;
+					color: rgb(31, 216, 31);
+				}
+			}
+		}
+	}
+	.footer__bottom {
+		height: 100%;
+		// background: cyan;
+		grid-column: span 3;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		h4 {
+			font-size: 1.2rem;
+			font-weight: 200;
+			font-family: $main-font;
+		}
+	}
+}
