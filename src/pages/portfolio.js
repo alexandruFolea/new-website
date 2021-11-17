@@ -6,7 +6,7 @@ import Link from 'next/link';
 const portfolio = () => {
 	return (
 		<div className='portfolio' id='portfolio'>
-			<div className='page__title'>
+			<div className='portfolio__page__title'>
 				<h1>My portfolio</h1>
 			</div>
 			<div className='portfolio__container'>

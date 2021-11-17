@@ -36,6 +36,10 @@ const About = () => {
 			<div className='about__right'>
 				<div className='about__right__title'>
 					<h1>About my process</h1>
+					<p>
+						In the event that you or your company would consider me a good fit
+						for your next project, we&apos;d undergo the following steps:
+					</p>
 				</div>
 				<div className='about__right__grid__container'>
 					<div className='about__right__grid__item'>

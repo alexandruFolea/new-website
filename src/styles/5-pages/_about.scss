@@ -5,7 +5,7 @@
 	max-width: 130rem;
 	margin: 0 auto;
 	font-family: $main-font;
-	padding: 3rem;
+	padding: 2rem;
 
 	&__left {
 		width: 100%;
@@ -44,10 +44,10 @@
 	&__right {
 		min-height: 95vh;
 		width: 100%;
-		margin-bottom: 20rem;
+		margin-bottom: 10rem;
 		position: relative;
 		z-index: 10;
-		padding: 0 2rem;
+		// padding: 0 2rem;
 
 		&::before {
 			position: absolute;
@@ -72,24 +72,29 @@
 				font-weight: 400;
 				border-bottom: 0.2rem solid $mono-800;
 				display: inline-block;
+				margin-bottom: 2rem;
 				color: $mono-200;
 				@include md-max {
 					font-size: 3.5rem;
 				}
 			}
+			p {
+				color: $mono-200;
+
+				font-size: 1.6rem;
+			}
 		}
 
 		&__grid__container {
-			// height: 25rem;
 			display: grid;
-			grid-row-gap: 20rem;
+			grid-row-gap: 12rem;
 			grid-column-gap: 6rem;
-
 			grid-template-columns: repeat(3, 1fr);
 
 			@include md-max {
 				grid-template-columns: 1fr;
-				grid-row-gap: 12rem;
+				grid-row-gap: 10rem;
+				padding: 5rem 0;
 			}
 		}
 

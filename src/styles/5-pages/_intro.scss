@@ -6,7 +6,7 @@
 	position: relative;
 
 	.intro__text {
-		// text-align: end;
+		text-align: end;
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -52,27 +52,43 @@
 		}
 
 		.intro__ctas {
-			width: 60%;
+			width: 80%;
 			margin: 0 auto;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
 
+			@include md-max {
+				flex-direction: column;
+
+				& > div {
+					margin-bottom: 4rem;
+				}
+			}
+
 			a {
-				background: $blue-550;
-				// border: 0.1rem solid $mono-200;
+				background: rgba($mono-200, 0.2);
+				border: 0.1rem solid $blue-550;
 				box-shadow: $box-shadow;
 				padding: 1rem 3rem;
 				color: $mono-200;
+				font-family: $display-font;
 				font-size: 2rem;
 				transition: all 0.15s ease-in-out;
+				letter-spacing: 0.8rem;
+				border-top-right-radius: 2rem;
+				border-bottom-left-radius: 2rem;
 
 				&:hover {
 					transform: translateY(-0.3rem);
 					box-shadow: $box-shadow-dark;
-
+					background: $mono-200;
 					// background: black;
-					// color: $blue-550;
+					color: $mono-800;
+					border-top-right-radius: 0;
+					border-bottom-left-radius: 0;
+					border-top-left-radius: 3rem;
+					border-bottom-right-radius: 3rem;
 				}
 			}
 		}

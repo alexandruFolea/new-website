@@ -18,12 +18,16 @@ const Intro = () => {
 				<p>Sensible to Front-End</p>
 
 				<div className='intro__ctas'>
-					<Link href='/about'>
-						<a>About Me</a>
-					</Link>
-					<Link href='/portfolio'>
-						<a>My Work</a>
-					</Link>
+					<div>
+						<Link href='/about'>
+							<a>about</a>
+						</Link>
+					</div>
+					<div>
+						<Link href='/about'>
+							<a>portfolio</a>
+						</Link>
+					</div>
 				</div>
 			</div>
 			<Particles
@@ -40,7 +44,7 @@ const Intro = () => {
 					interactivity: {
 						events: {
 							onClick: {
-								enable: true,
+								enable: false,
 								mode: 'push',
 							},
 							onHover: {
@@ -71,10 +75,10 @@ const Intro = () => {
 						},
 						links: {
 							color: '#001000',
-							distance: 150,
+							distance: 120,
 							enable: true,
-							opacity: 0.5,
-							width: 1,
+							opacity: 0.7,
+							width: 1.4,
 						},
 						collisions: {
 							enable: true,
@@ -84,7 +88,7 @@ const Intro = () => {
 							enable: true,
 							outMode: 'bounce',
 							random: false,
-							speed: 1,
+							speed: 0.3,
 							straight: true,
 						},
 						number: {
@@ -95,7 +99,7 @@ const Intro = () => {
 							value: 120,
 						},
 						opacity: {
-							value: 0.5,
+							value: 0.7,
 						},
 						shape: {
 							type: 'circle',
