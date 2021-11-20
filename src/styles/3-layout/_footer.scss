@@ -92,6 +92,13 @@
 					margin-bottom: 1.4rem;
 					font-size: 1.8rem;
 					font-family: $display-font;
+					display: flex;
+					align-items: center;
+					svg {
+						margin-right: 1rem;
+						font-size: 3rem;
+						color: rgba($blue-550, 0.8);
+					}
 
 					@include md-max {
 						text-align: center;

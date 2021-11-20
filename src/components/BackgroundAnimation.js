@@ -2,7 +2,7 @@ const BackgroundAnimation = () => (
 	<div className='bg__animation'>
 		<svg
 			className='BgAnimation__svg'
-			viewBox='0 0 1000 1000'
+			viewBox='0 0 2000 2000'
 			fill='cyan'
 			xmlns='http://www.w3.org/2000/svg'
 		>

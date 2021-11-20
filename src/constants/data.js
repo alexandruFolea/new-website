@@ -1,7 +1,7 @@
 export const projects = [
 	{
 		id: '2',
-		title: 'Gym project',
+		title: 'Fitness Center Project',
 		url: 'https://okocha-gym.netlify.app/',
 		img: '/projects/gym-1.jpeg',
 		desc: 'Potential gym application',

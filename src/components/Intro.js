@@ -24,7 +24,7 @@ const Intro = () => {
 						</Link>
 					</div>
 					<div>
-						<Link href='/about'>
+						<Link href='/portfolio'>
 							<a>portfolio</a>
 						</Link>
 					</div>

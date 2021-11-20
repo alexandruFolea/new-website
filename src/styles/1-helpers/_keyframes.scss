@@ -1,5 +1,3 @@
-
-
 @keyframes bounce-in-right {
 	0% {
 		transform: translateX(600px);
@@ -38,3 +36,17 @@
 }
 
 // .bounce-in-right{animation:bounce-in-right 1.1s both}
+
+@keyframes flip-in-hor-top {
+	0% {
+		transform: rotateX(-80deg);
+		opacity: 0;
+	}
+	100% {
+		transform: rotateX(0);
+		opacity: 1;
+	}
+}
+// .flip-in-hor-top {
+// 	animation: flip-in-hor-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s both;
+// }

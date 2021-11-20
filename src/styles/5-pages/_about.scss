@@ -1,250 +1,53 @@
 .about {
-	// height: 100vh;
 	min-height: 100vh;
-	width: 100%;
-	max-width: 130rem;
-	margin: 0 auto;
-	font-family: $main-font;
-	padding: 2rem;
+	height: 100%;
+	// background: url('/about__bg1.jpeg');
+	background: url('/bg6.jpeg');
+	@include bg-no-repeat;
+	// background-position: bottom left;
+	// background-attachment: fixed;
 
-	&__left {
-		width: 100%;
-		margin: 10rem 0;
-
-		&__title {
-			color: $mono-200;
-			h1 {
-				display: inline-block;
-				font-family: $display-font;
-				border-bottom: 0.2rem solid $mono-800;
-				font-size: 4rem;
-				font-weight: 400;
-				word-spacing: 1rem;
-				margin-bottom: 2rem;
-			}
-		}
-
-		&__desc {
-			width: 60%;
-			// max-width: 60%;
-
-			@include md-max {
-				width: 100%;
-			}
-
-			p {
-				font-size: 1.6rem;
-				color: $mono-300;
-				margin-bottom: 0.5rem;
-				line-height: 1.5;
-			}
-		}
-	}
-
-	&__right {
-		min-height: 95vh;
-		width: 100%;
-		margin-bottom: 10rem;
-		position: relative;
-		z-index: 10;
+	&__container {
+		height: 100vh;
+		max-width: 130rem;
+		margin: 0 auto;
+		padding: 10rem 1rem;
 		// padding: 0 2rem;
-
-		&::before {
-			position: absolute;
-			display: block;
-			content: '';
-			top: 14rem;
-			right: 0;
-			left: 0;
-			bottom: 0;
-			background: $mono-800;
-			clip-path: polygon(0 0, 100% 0, 100% 62%, 0% 100%);
-			z-index: 0;
-		}
-
-		&__title {
-			width: 100%;
-			margin-bottom: 10rem;
-
-			h1 {
-				font-size: 4rem;
-				font-family: $display-font;
-				font-weight: 400;
-				border-bottom: 0.2rem solid $mono-800;
-				display: inline-block;
-				margin-bottom: 2rem;
-				color: $mono-200;
-				@include md-max {
-					font-size: 3.5rem;
-				}
-			}
-			p {
-				color: $mono-200;
-
-				font-size: 1.6rem;
-			}
-		}
-
-		&__grid__container {
-			display: grid;
-			grid-row-gap: 12rem;
-			grid-column-gap: 6rem;
-			grid-template-columns: repeat(3, 1fr);
-
-			@include md-max {
-				grid-template-columns: 1fr;
-				grid-row-gap: 10rem;
-				padding: 5rem 0;
-			}
-		}
-
-		&__grid__item {
-			display: flex;
-			position: relative;
-			z-index: 10;
-
-			&:nth-of-type(1)::before {
-				content: '1';
-				display: block;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				font-size: 16rem;
-				z-index: 0;
-				color: rgba($mono-200, 0.1);
-			}
-			&:nth-of-type(2)::before {
-				content: '2';
-				display: block;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				font-size: 16rem;
-				z-index: 0;
-				color: rgba($mono-200, 0.1);
-			}
-			&:nth-of-type(3)::before {
-				content: '3';
-				display: block;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				font-size: 16rem;
-				z-index: 0;
-				color: rgba($mono-200, 0.1);
-			}
-			&:nth-of-type(4)::before {
-				content: '4';
-				display: block;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				font-size: 16rem;
-				z-index: 0;
-				color: rgba($mono-200, 0.1);
-			}
-			&:nth-of-type(5)::before {
-				content: '5';
-				display: block;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				font-size: 16rem;
-				z-index: 0;
-				color: rgba($mono-200, 0.081);
-			}
-			&:nth-of-type(6)::before {
-				content: '6';
-				display: block;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				font-size: 16rem;
-				z-index: 0;
-				color: rgba($mono-200, 0.1);
-			}
-		}
-		.grid__item__icon {
-			svg {
-				height: 6rem;
-				width: 6rem;
-				padding-right: 1rem;
-				color: $mono-400;
-			}
-		}
-
-		.grid__item__text {
-			h3 {
-				font-size: 2rem;
-				color: $mono-200;
-				margin-bottom: 1rem;
-			}
-			p {
-				font-size: 1.6rem;
-				font-weight: 300;
-				color: $mono-400;
-			}
-		}
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
-	&__faqs {
-		min-height: 100vh;
-		margin-bottom: 10rem;
-		&__title {
-			margin-bottom: 5rem;
-			display: inline-block;
+	&__text {
+		width: 70rem;
+		height: 35rem;
+		border-radius: 0.5rem;
+		margin-top: 10rem;
+		padding: 3rem 4.8rem;
+		font-family: $main-font;
 
-			h1 {
-				font-size: 4rem;
-				font-family: $display-font;
-				color: $mono-200;
-				font-weight: 400;
-				border-bottom: 0.2rem solid $mono-800;
-				display: flex;
-				align-items: center;
-				@include md-max {
-					font-size: 2.5rem;
-				}
+		@include md-max {
+			padding: 0;
+		}
+		h1 {
+			color: $mono-800;
+			font-size: 5rem;
+			margin-bottom: 2rem;
+			font-weight: 900;
+			letter-spacing: 0.6rem;
+			text-shadow: 0.7rem 0 0.4rem rgba($blue-550, 0.683);
 
-				svg {
-					margin-right: 3rem;
-					margin-top: 1rem;
-					color: $mono-400;
-				}
+			@include xl {
+				font-size: 8rem;
+				margin-bottom: 0;
 			}
 		}
 
-		&__grid__container {
-			display: grid;
-			grid-template-columns: repeat(2, 1fr);
-			grid-column-gap: 4rem;
-			grid-row-gap: 3rem;
-
-			@include md-max {
-				grid-template-columns: 1fr;
-			}
-		}
-
-		&__grid__item {
-			margin-bottom: 3rem;
-
-			h3 {
-				font-size: 2rem;
-				color: $mono-200;
-				margin-bottom: 0.5rem;
-			}
-			p {
-				color: $mono-300;
-				font-size: 1.6rem;
-				font-weight: 300;
-				line-height: 1.6;
-			}
+		p {
+			font-size: 1.6rem;
+			font-weight: 300;
+			margin-bottom: 0.8rem;
+			color: $mono-500;
 		}
 	}
 }

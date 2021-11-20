@@ -1,0 +1,242 @@
+.design__and__development {
+	// background: rgba(cyan, 0.5);
+	padding: 10rem 0;
+
+	.process__container {
+		min-height: 85vh;
+		width: 100%;
+		width: 100%;
+		max-width: 130rem;
+		margin: 0 auto;
+		margin-bottom: 10rem;
+		position: relative;
+		z-index: 10;
+		// padding: 0 2rem;
+		@include md-max {
+			padding: 0 1rem;
+		}
+		@include lg-max {
+			padding: 0 2rem;
+		}
+		@include xl-max {
+			padding: 0 2rem;
+		}
+
+		&::before {
+			position: absolute;
+			display: block;
+			content: '';
+			top: 14rem;
+			right: 0;
+			left: 0;
+			bottom: 0;
+			background: $mono-800;
+			clip-path: polygon(0 0, 100% 0, 100% 82%, 0% 100%);
+			// filter: drop-shadow(0 1rem 0.6rem $mono-200);
+
+			z-index: 0;
+		}
+
+		&__title {
+			width: 100%;
+			margin-bottom: 10rem;
+
+			h1 {
+				font-size: 6rem;
+				font-family: $main-font;
+				font-weight: 800;
+
+				display: inline-block;
+				margin-bottom: 2rem;
+
+				color: $mono-200;
+				@include md-max {
+					font-size: 3.5rem;
+				}
+			}
+			p {
+				color: $mono-400;
+				font-family: $main-font;
+				font-size: 1.6rem;
+				font-weight: 300;
+				margin-bottom: 5rem;
+			}
+		}
+
+		&__grid__container {
+			// margin-top: 5rem;
+			padding: 0 2rem;
+
+			display: grid;
+			grid-row-gap: 12rem;
+			grid-column-gap: 6rem;
+			grid-template-columns: repeat(3, 1fr);
+
+			@include md-max {
+				grid-template-columns: 1fr;
+				grid-row-gap: 10rem;
+				padding: 5rem 0;
+			}
+		}
+
+		&__grid__item {
+			display: flex;
+			position: relative;
+			z-index: 10;
+
+			&:nth-of-type(1)::before {
+				content: '1';
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				font-size: 16rem;
+				z-index: 0;
+				color: rgba($mono-200, 0.1);
+			}
+			&:nth-of-type(2)::before {
+				content: '2';
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				font-size: 16rem;
+				z-index: 0;
+				color: rgba($mono-200, 0.1);
+			}
+			&:nth-of-type(3)::before {
+				content: '3';
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				font-size: 16rem;
+				z-index: 0;
+				color: rgba($mono-200, 0.1);
+			}
+			&:nth-of-type(4)::before {
+				content: '4';
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				font-size: 16rem;
+				z-index: 0;
+				color: rgba($mono-200, 0.1);
+			}
+			&:nth-of-type(5)::before {
+				content: '5';
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				font-size: 16rem;
+				z-index: 0;
+				color: rgba($mono-200, 0.081);
+			}
+			&:nth-of-type(6)::before {
+				content: '6';
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				font-size: 16rem;
+				z-index: 0;
+				color: rgba($mono-200, 0.1);
+			}
+		}
+		.grid__item__icon {
+			svg {
+				height: 6rem;
+				width: 6rem;
+				padding-right: 1rem;
+				color: $mono-400;
+			}
+		}
+
+		.grid__item__text {
+			h3 {
+				font-size: 2rem;
+				color: $mono-200;
+				margin-bottom: 1rem;
+			}
+			p {
+				font-size: 1.6rem;
+				font-weight: 300;
+				color: $mono-400;
+			}
+		}
+	}
+
+	.faqs__container {
+		min-height: 100%;
+		// margin-bottom: 10rem;
+		width: 100%;
+		max-width: 130rem;
+		margin: 0 auto 10rem;
+		@include md-max {
+			padding: 0 1rem;
+		}
+		@include lg-max {
+			padding: 0 2rem;
+		}
+		@include xl-max {
+			padding: 0 2rem;
+		}
+		&__title {
+			margin-bottom: 5rem;
+			display: inline-block;
+
+			h1 {
+				font-size: 4rem;
+				font-family: $main-font;
+				color: $mono-200;
+				font-weight: 800;
+				display: flex;
+				align-items: center;
+				@include md-max {
+					font-size: 2.5rem;
+				}
+
+				svg {
+					margin-right: 3rem;
+					// margin-top: 1rem;
+					color: $mono-400;
+				}
+			}
+		}
+
+		&__grid {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-column-gap: 4rem;
+			grid-row-gap: 3rem;
+
+			@include md-max {
+				grid-template-columns: 1fr;
+			}
+		}
+
+		&__grid__item {
+			margin-bottom: 3rem;
+
+			h3 {
+				font-size: 2rem;
+				color: $mono-200;
+				margin-bottom: 0.5rem;
+			}
+			p {
+				color: $mono-300;
+				font-size: 1.6rem;
+				font-weight: 300;
+				line-height: 1.6;
+			}
+		}
+	}
+}
