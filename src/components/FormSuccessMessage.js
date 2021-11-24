@@ -4,8 +4,7 @@ const FormSuccessMessage = () => {
 	return (
 		<>
 			<span className='prompt__message'>
-				{' '}
-				Thank you, I'll get back to you shortly !
+				Thank you, I&apos;ll get back to you shortly !
 			</span>
 		</>
 	);

@@ -10,6 +10,8 @@ const designAndDevelopment = () => {
 	return (
 		<>
 			<Head>
+				<link rel='shortcut icon' href='/favicon.ico' />
+
 				<title>Alex Folea - Design & Development</title>
 				<meta name='viewport' content='initial-scale=1.0, width=device-width' />
 			</Head>

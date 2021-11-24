@@ -1,6 +1,5 @@
 import Contact from './Contact';
-import Image from 'next/image';
-import { FcHeatMap } from 'react-icons/fc';
+import { BiDialpad } from 'react-icons/bi';
 import Link from 'next/link';
 
 const Footer = () => {
@@ -11,7 +10,7 @@ const Footer = () => {
 			</div>
 			<div className='footer__center'>
 				<div className='footer__center__top'>
-					<FcHeatMap />
+					<BiDialpad />
 					<h4>Site Navigation</h4>
 				</div>
 				<ul className='footer__center__list'>
@@ -47,9 +46,7 @@ const Footer = () => {
 				<Contact />
 			</div>
 			<div className='footer__bottom'>
-				<h4>
-					Copyright &copy; 2021 Alex Folea Development | All rights reserved
-				</h4>
+				<h4>Copyright &copy; 2021 Alex Folea Development</h4>
 			</div>
 		</footer>
 	);
