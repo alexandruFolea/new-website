@@ -60,12 +60,12 @@ const Intro = () => {
 					},
 					particles: {
 						color: {
-							value: '#bbdefb',
+							value: '#14213d',
 							// value: '#fdffb6',
 						},
 						links: {
 							// color: '#fdffb6',
-							color: '#000',
+							color: '#e5e5e5',
 							distance: 120,
 							enable: true,
 							opacity: 0.99,
@@ -85,19 +85,19 @@ const Intro = () => {
 						number: {
 							density: {
 								enable: true,
-								value_area: 800,
+								value_area: 1000,
 							},
 							value: 120,
 						},
 						opacity: {
-							value: 1,
+							value: 0.96,
 						},
 						shape: {
 							type: 'circle',
 						},
 						size: {
 							random: true,
-							value: 4,
+							value: 6,
 						},
 					},
 					detectRetina: true,
