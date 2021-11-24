@@ -3,11 +3,16 @@ import { BsFileEarmarkMedical, BsFillPatchQuestionFill } from 'react-icons/bs';
 import { MdOutlineDeveloperMode } from 'react-icons/md';
 import { GiMissileLauncher } from 'react-icons/gi';
 import { MdUpdate } from 'react-icons/md';
+import Head from 'next/head';
 
 import Footer from '../components/Footer';
 const designAndDevelopment = () => {
 	return (
 		<>
+			<Head>
+				<title>Alex Folea - Design & Development</title>
+				<meta name='viewport' content='initial-scale=1.0, width=device-width' />
+			</Head>
 			<div className='design__and__development'>
 				<div className='process__container'>
 					<div className='process__container__title'>
