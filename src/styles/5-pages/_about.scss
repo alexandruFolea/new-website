@@ -1,53 +1,114 @@
 .about {
 	min-height: 100vh;
-	height: 100%;
-	// background: url('/about__bg1.jpeg');
-	background: url('/bg6.jpeg');
-	@include bg-no-repeat;
-	// background-position: bottom left;
-	// background-attachment: fixed;
+	display: flex;
+	flex-direction: column;
+	max-width: 130rem;
+	margin: 0 auto;
 
-	&__container {
-		height: 100vh;
+	&__wrapper {
+		height: 100%;
+		width: 100%;
+		padding-top: 15rem;
 		max-width: 130rem;
 		margin: 0 auto;
-		padding: 10rem 1rem;
-		// padding: 0 2rem;
 		display: flex;
+		flex-direction: column;
+		// justify-content: center;
 		align-items: center;
-		justify-content: center;
-	}
-
-	&__text {
-		width: 70rem;
-		height: 35rem;
-		border-radius: 0.5rem;
-		margin-top: 10rem;
-		padding: 3rem 4.8rem;
-		font-family: $main-font;
 
 		@include md-max {
-			padding: 0;
+			padding-top: 0;
 		}
-		h1 {
-			color: $mono-800;
-			font-size: 5rem;
-			margin-bottom: 2rem;
-			font-weight: 900;
-			letter-spacing: 0.6rem;
-			text-shadow: 0.7rem 0 0.4rem rgba($blue-550, 0.683);
+	}
 
-			@include xl {
-				font-size: 8rem;
-				margin-bottom: 0;
+	.intro__card {
+		// background: rgba($mono-200, 0.6);
+		padding: 6rem;
+		position: relative;
+		font-family: $main-font;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+		// justify-items: center;
+
+		@include lg-max {
+			grid-template-columns: 1fr;
+			grid-gap: 5rem;
+			padding: 15rem 2rem 25rem 2rem;
+			// margin-bottom: 15rem;
+		}
+		&__text {
+			@include md-max {
+			}
+
+			h3 {
+				font-size: 3rem;
+				font-family: $sec-font;
+				color: $mono-800;
+				margin-bottom: 2rem;
+				span {
+					color: $blue-550;
+				}
+
+				@include md-max {
+					font-size: 2.5rem;
+				}
+			}
+
+			p {
+				font-size: 1.6rem;
+				font-weight: 200;
+				color: $mono-700;
+				margin-bottom: 0.5rem;
+				line-height: 1.6;
+			}
+
+			a {
+				color: $blue-550;
+				font-weight: 700;
 			}
 		}
 
-		p {
-			font-size: 1.6rem;
-			font-weight: 300;
-			margin-bottom: 0.8rem;
-			color: $mono-500;
+		&__social {
+			// background: beige;
+			margin-top: 4rem;
+			display: flex;
+			align-items: center;
+
+			span {
+				font-size: 1.6rem;
+				font-family: $main-font;
+				font-weight: 700;
+				color: $mono-800;
+				margin-right: 2rem;
+			}
+			svg {
+				font-size: 4rem;
+				margin-right: 2rem;
+				color: $blue-550;
+				transition: transform 0.2s ease-in;
+
+				&:hover {
+					color: rgba($blue-550, 0.8);
+					transform: scale(1.2);
+				}
+			}
+		}
+
+		&__image {
+			// border: 1px solid black;
+			justify-self: center;
+			transform: perspective(10rem);
+			padding: 1rem;
+
+			@include md-max {
+				justify-self: center;
+			}
+
+			img {
+				border-radius: 0.5rem;
+				object-position: bottom center;
+			}
 		}
 	}
 }

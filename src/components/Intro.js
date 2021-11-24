@@ -3,8 +3,6 @@ import Link from 'next/link';
 const Intro = () => {
 	const particlesInit = (main) => {
 		console.log(main);
-
-		// you can initialize the tsParticles instance (main) here, adding custom shapes or presets
 	};
 
 	const particlesLoaded = (container) => {
@@ -13,21 +11,12 @@ const Intro = () => {
 	return (
 		<div className='intro'>
 			<div className='intro__text'>
-				<h1>Creative</h1>
-				<h3>Developer</h3>
-				<p>Sensible to Front-End</p>
-
-				<div className='intro__ctas'>
-					<div>
-						<Link href='/about'>
-							<a>about</a>
-						</Link>
-					</div>
-					<div>
-						<Link href='/portfolio'>
-							<a>portfolio</a>
-						</Link>
-					</div>
+				<h1>Hi, I&apos; m Alex</h1>
+				<p>A web developer sensible to front-end</p>
+				<div className='intro__cta'>
+					<Link href='/portfolio'>
+						<a>recent work</a>
+					</Link>
 				</div>
 			</div>
 			<Particles
@@ -37,7 +26,7 @@ const Intro = () => {
 				options={{
 					background: {
 						color: {
-							value: '#fff',
+							value: '',
 						},
 					},
 					fpsLimit: 60,
@@ -71,17 +60,19 @@ const Intro = () => {
 					},
 					particles: {
 						color: {
-							value: '#00ffff',
+							value: '#bbdefb',
+							// value: '#fdffb6',
 						},
 						links: {
-							color: '#001000',
+							// color: '#fdffb6',
+							color: '#000',
 							distance: 120,
 							enable: true,
-							opacity: 0.7,
-							width: 1.4,
+							opacity: 0.99,
+							width: 1,
 						},
 						collisions: {
-							enable: true,
+							enable: false,
 						},
 						move: {
 							direction: 'none',
@@ -94,19 +85,19 @@ const Intro = () => {
 						number: {
 							density: {
 								enable: true,
-								value_area: 600,
+								value_area: 800,
 							},
 							value: 120,
 						},
 						opacity: {
-							value: 0.7,
+							value: 1,
 						},
 						shape: {
 							type: 'circle',
 						},
 						size: {
 							random: true,
-							value: 6,
+							value: 4,
 						},
 					},
 					detectRetina: true,

@@ -28,7 +28,7 @@
 			padding-bottom: 0.5rem;
 			font-size: 3rem;
 			border-bottom: 0.2rem solid $blue-550;
-			font-family: $display-font;
+			// font-family: $display-font;
 		}
 	}
 	.footer__center {
@@ -44,10 +44,13 @@
 
 		.footer__center__top {
 			display: flex;
+			align-items: center;
+			justify-content: space-around;
 
 			h4 {
 				font-size: 1.8rem;
-				font-family: $display-font;
+				margin-bottom: 0.4em;
+				// font-family: $display-font;
 			}
 
 			svg {
@@ -58,8 +61,8 @@
 		}
 
 		.footer__center__list {
-			padding-left: 3rem;
-			border-left: 0.3rem solid $blue-550;
+			// padding-left: 3rem;
+			// border-left: 0.3rem solid $blue-550;
 
 			li {
 				margin-bottom: 1rem;
@@ -75,6 +78,7 @@
 	.footer__right {
 		@include md-max {
 			margin-bottom: 3rem;
+			text-align: center;
 		}
 		height: 100%;
 		width: 100%;
@@ -91,7 +95,7 @@
 				h4 {
 					margin-bottom: 1.4rem;
 					font-size: 1.8rem;
-					font-family: $display-font;
+					// font-family: $display-font;
 					display: flex;
 					align-items: center;
 					svg {
@@ -101,7 +105,8 @@
 					}
 
 					@include md-max {
-						text-align: center;
+						justify-content: center;
+						// text-align: center;
 						font-size: 3rem;
 					}
 				}

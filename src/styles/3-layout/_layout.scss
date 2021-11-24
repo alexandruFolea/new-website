@@ -1,5 +1,6 @@
 .main-container {
 	width: 100vw;
-	// background: url('../../images/b4.webp');
-	// @include bg-no-repeat;
+	min-height: 100vh;
+	background: linear-gradient(135deg, #9c2ef7, #a354e3, $blue-550);
+	background-attachment: fixed;
 }

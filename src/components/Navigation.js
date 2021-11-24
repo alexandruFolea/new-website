@@ -24,13 +24,23 @@ const Navigation = () => {
 				</li>
 
 				<li onClick={handleClick}>
+					<Link href='/portfolio'>
+						<a>portfolio</a>
+					</Link>
+				</li>
+				<li onClick={handleClick}>
+					<Link href='/design-and-development'>
+						<a>Design & Dev</a>
+					</Link>
+				</li>
+				<li onClick={handleClick}>
 					<Link href='/about'>
 						<a>about</a>
 					</Link>
 				</li>
 				<li onClick={handleClick}>
-					<Link href='/portfolio'>
-						<a>portfolio</a>
+					<Link href='/contact'>
+						<a>contact</a>
 					</Link>
 				</li>
 			</ul>
