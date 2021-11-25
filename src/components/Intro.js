@@ -12,7 +12,7 @@ const Intro = () => {
 		<div className='intro'>
 			<div className='intro__text'>
 				<h1>Hi, I&apos; m Alex</h1>
-				<p>A web developer sensible to front-end</p>
+				<p>A web developer with affinity to front-end</p>
 				<div className='intro__cta'>
 					<Link href='/portfolio'>
 						<a>recent work</a>

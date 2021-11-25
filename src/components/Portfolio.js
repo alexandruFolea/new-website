@@ -18,10 +18,14 @@ const Portfolio = () => {
 								<p>{desc}</p>
 							</div>
 							<ul className='item__stack__list'>
-								<p>tech used:</p>
-								{stacks.map((stack) => (
-									<li key={stack}>{stack}</li>
-								))}
+								<div className='item__stack__list__title'>
+									<p>tech used:</p>
+								</div>
+								<div className='item__stack__list__items'>
+									{stacks.map((stack) => (
+										<li key={stack}>{stack}</li>
+									))}
+								</div>
 							</ul>
 
 							<div className='item__cta'>
